@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+
+# PlatformIO and embedded outputs
+.pio/
+firmware/**/*.elf
+firmware/**/*.uf2
+firmware/**/*.map
+
+# Local configuration
+.env
+.env.*
+!.env.example
+config.local.*
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~
+
+# Packaging artifacts
+/dist/
+/dashboard/dist/
+/hub/**/dist/
+*.whl
+
