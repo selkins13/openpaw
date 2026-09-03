@@ -10,6 +10,8 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 
 REQUIRED_FILES = (
+    ".editorconfig",
+    ".gitignore",
     ".github/CODEOWNERS",
     ".github/copilot-instructions.md",
     "CODE_OF_CONDUCT.md",
