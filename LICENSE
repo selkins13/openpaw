@@ -1,0 +1,50 @@
+OpenPaw is distributed under multiple licenses according to the type of work.
+
+Software
+--------
+
+Software in firmware/, hub/, dashboard/, examples/, and tests/ is licensed
+under the MIT License:
+
+Copyright (c) 2026 OpenPaw contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SPDX-License-Identifier: MIT
+
+Hardware
+--------
+
+Hardware source in hardware/ is licensed under the CERN Open Hardware Licence
+Version 2 - Strongly Reciprocal.
+
+SPDX-License-Identifier: CERN-OHL-S-2.0
+License text: https://ohwr.org/cern_ohl_s_v2.txt
+
+Documentation and labels
+------------------------
+
+Documentation in docs/, labels/, and the repository root Markdown files is
+licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+License, except where another license is explicitly stated.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+License text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Files that contain an explicit licensing notice use that notice instead.
