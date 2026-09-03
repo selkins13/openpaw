@@ -12,6 +12,7 @@ instructions will be added as the first reference implementation is selected.
 4. Review the draft [tile connector standard](tile-connector-standard.md) and
    [communication protocol](communication-protocol.md).
 5. Check the [roadmap](roadmap.md) for current priorities.
+6. Review the [continuous integration plan](continuous-integration.md).
 
 ## Prepare a contribution
 

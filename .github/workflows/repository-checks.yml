@@ -4,6 +4,11 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
+
+concurrency:
+  group: repository-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -12,7 +17,8 @@ jobs:
   repository-checks:
     name: Repository checks
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Verify repository metadata
-        run: test -f .github/CODEOWNERS
+      - name: Check repository and documentation
+        run: python3 .github/scripts/check_repository.py
