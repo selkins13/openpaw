@@ -4,6 +4,11 @@ This preliminary BOM supports early one-tile and six-tile prototypes. Exact
 manufacturer part numbers, quantities, alternates, costs, and suppliers must be
 recorded before a reproducible build is released.
 
+The machine-readable
+[v0.1 prototype BOM](v0.1-prototype.csv) reconciles this baseline with the
+experimental one-tile software and firmware branch. Its proposed, unresolved,
+and deferred statuses are not approved production selections.
+
 | Component | Initial quantity | Purpose |
 | --- | ---: | --- |
 | Raspberry Pi 5, 4 GB | 1 | Local hub |

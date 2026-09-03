@@ -1,0 +1,45 @@
+name: Prototype checks
+
+on:
+  push:
+    branches:
+      - selkins13-v0-1-prototype
+  pull_request:
+    paths:
+      - "hub/**"
+      - "firmware/tile/**"
+      - "examples/hub-config.json"
+      - ".github/workflows/prototype-checks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hub-tests:
+    name: Hub package tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install hub package
+        run: python -m pip install --no-deps -e ./hub
+      - name: Run hub tests
+        run: python -m unittest discover -s hub/tests -v
+
+  firmware-build:
+    name: RP2040 firmware build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PlatformIO
+        run: python -m pip install platformio
+      - name: Build tile firmware
+        run: pio run --project-dir firmware/tile

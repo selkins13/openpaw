@@ -1,0 +1,18 @@
+item_id,assembly,category,component,quantity,unit,status,prototype_choice,validation_or_open_issue
+HUB-001,hub,compute,Raspberry Pi 5 4 GB,1,each,proposed,Reference local hub,Confirm memory and thermal requirements
+HUB-002,hub,power,Official Raspberry Pi 5 USB-C supply,1,each,proposed,Hub supply,Tiles must not be powered from GPIO
+HUB-003,hub,storage,High-endurance microSD card 32 GB or larger,1,each,proposed,Local software and data,Define backup and endurance test
+HUB-004,hub,audio,MAX98357A I2S amplifier,1,each,proposed,Current PRD reference,Validate latency loudness thermal behavior and wiring
+HUB-005,hub,audio,3 W speaker,1,each,proposed,Current PRD reference,Validate animal-safe volume and enclosure response
+TILE-001,tile,controller,Raspberry Pi Pico RP2040,1,each,prototype,Interchangeable tile controller,Define revision-readable production controller
+TILE-002,tile,input,Velostat pressure-sensitive sheet,1,piece,prototype,Current PRD pressure material,Characterize force range drift hysteresis and lifetime
+TILE-003,tile,input,Copper tape electrodes,2,pieces,prototype,Current PRD pressure electrodes,Define geometry adhesive and corrosion controls
+TILE-004,tile,lighting,WS2812B addressable LED ring,1,each,prototype,Current PRD feedback concept,Validate 3.3 V logic current thermal and diffusion
+TILE-005,tile,mechanical,EVA foam tile body and pressure mechanism,1,set,prototype,Current prototype material,Validate cleanability ingestion impact and repeatability
+TILE-006,tile,interconnect,Pogo pins,1,set,unresolved,Connector candidate only,Pinout keying current and hot-plug behavior not finalized
+TILE-007,tile,interconnect,Neodymium magnets,1,set,unresolved,Alignment and retention candidate,Assess ingestion pinch magnetic and retention hazards
+TILE-008,tile,wiring,JST-XH connectors,1,set,proposed,Repairable internal wiring,Confirm pitch locking current and strain relief
+TILE-009,tile,wiring,22 AWG wire,as-required,meter,proposed,Prototype power and signal wiring,Calculate gauge from current and length
+DEV-001,development,transport,RP2040-compatible USB data cable,1,each,experimental,Single-tile JSON Lines development link,USB and JSON Lines are not final bus choices
+SAFE-001,system,safety,Per-segment resettable fuse or current limiter,as-designed,each,unresolved,Fault isolation candidate,Select after power topology and fault analysis
+BUS-001,system,transport,Differential transceiver and termination,as-designed,set,deferred,CAN or RS-485 candidate for v0.2,Requires transport selection and test vectors

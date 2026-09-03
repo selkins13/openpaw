@@ -1,0 +1,17 @@
+{
+  "audio": {
+    "directory": "./audio",
+    "required": false
+  },
+  "queue_size": 256,
+  "shutdown_timeout_s": 5,
+  "mock_interval_s": 3,
+  "tiles": {
+    "replace-with-discovered-tile-id": {
+      "label": "Prototype tile",
+      "audio_file": null,
+      "audio_required": false,
+      "color": [32, 128, 255]
+    }
+  }
+}
