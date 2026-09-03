@@ -1,11 +1,14 @@
 # Architecture
 
-OpenPaw consists of four primary layers:
+OpenPaw uses a Raspberry Pi 5 as its local hub and RP2040-based hexagonal tiles
+as its modular interaction surface. It consists of four primary layers:
 
-1. **Tiles** provide physical controls, sensors, indicators, and audio input.
-2. **Tile firmware** identifies hardware and exchanges events with the hub.
-3. **The hub** discovers tiles, processes audio, runs services, and exposes an
-   API.
+1. **Tiles** provide a pressure switch and RGB LED feedback in each physical
+   module.
+2. **Tile firmware** reads the pressure switch, controls LEDs, identifies the
+   tile, and reports button presses.
+3. **The hub** discovers tiles, plays audio, records usage analytics, runs
+   services and integrations, and exposes an API.
 4. **The dashboard** configures the system and visualizes activity.
 
 ## Design principles

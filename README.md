@@ -16,7 +16,8 @@ for building and studying accessible animal-computer interaction systems.
 - `tests/` contains cross-component and system-level tests.
 
 Start with [the getting-started guide](docs/getting-started.md), then review the
-[architecture](docs/architecture.md) and [roadmap](docs/roadmap.md).
+[product requirements](docs/product-requirements.md),
+[architecture](docs/architecture.md), and [roadmap](docs/roadmap.md).
 
 ## Contributing
 
@@ -26,4 +27,5 @@ Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the
 ## Licensing
 
 OpenPaw uses different open licenses for software, hardware, and documentation.
-See [LICENSE](LICENSE) for the scope and terms.
+See [LICENSE](LICENSE) for the scope and terms. The OpenPaw name and branding
+are subject to the [trademark policy](TRADEMARKS.md).
