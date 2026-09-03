@@ -17,8 +17,22 @@ Each tile must provide:
 - A stable mechanical mounting interface.
 - A connector compliant with the
   [tile connector standard](tile-connector-standard.md).
-- A machine-readable identifier and hardware revision.
+- An RP2040 microcontroller.
+- A pressure switch and addressable RGB LED feedback.
+- A machine-readable unique identifier and hardware revision.
 - Declared capabilities and power requirements.
+
+The Raspberry Pi 5 reference hub provides audio output through a MAX98357A
+amplifier and 3 W speaker. See the
+[prototype bill of materials](../hardware/bom/prototype-bom.md) for the initial
+reference components.
+
+## Performance targets
+
+- Detect a tile press in less than 50 ms.
+- Begin the assigned audio response in less than 100 ms after a press.
+- Allow tiles to be connected and removed while the system is operating.
+- Discover connected tiles automatically without manual addressing.
 
 ## Environmental targets
 

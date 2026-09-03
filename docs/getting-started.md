@@ -5,11 +5,13 @@ instructions will be added as the first reference implementation is selected.
 
 ## Explore the project
 
-1. Read the [architecture](architecture.md).
-2. Review the [hardware specification](hardware-spec.md).
-3. Review the draft [tile connector standard](tile-connector-standard.md) and
+1. Read the [product requirements](product-requirements.md).
+2. Read the [architecture](architecture.md).
+3. Review the [hardware specification](hardware-spec.md) and
+   [prototype bill of materials](../hardware/bom/prototype-bom.md).
+4. Review the draft [tile connector standard](tile-connector-standard.md) and
    [communication protocol](communication-protocol.md).
-4. Check the [roadmap](roadmap.md) for current priorities.
+5. Check the [roadmap](roadmap.md) for current priorities.
 
 ## Prepare a contribution
 
